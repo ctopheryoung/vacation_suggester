@@ -1,11 +1,11 @@
-#quiz {
+#quiz-slide {
   display: none;
 }
 
-#result {
+#result-slide {
   display: none;
 }
 
-#introduction {
+.container {
   text-align: center;
 }

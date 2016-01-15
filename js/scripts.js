@@ -1,12 +1,12 @@
 $(document).ready(function() {
     $("button#begin").click(function() {
-      $("div#introduction").hide();
-      $("div#quiz").show();
+      $("div#introduction-slide").hide();
+      $("div#quiz-slide").show();
     });
 
     $("button#answer-submit").click(function(){
-      $("div#quiz").hide();
-      $("div#result").show();
+      $("div#quiz-slide").hide();
+      $("div#result-slide").show();
     });
 
 
