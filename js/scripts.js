@@ -20,7 +20,7 @@ $(document).ready(function() {
                             $("#destinationName").empty().append(destination);
                             $("#results").show();
                           }
-              }
+              } 
             }
           }
         }
