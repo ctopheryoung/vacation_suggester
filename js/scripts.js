@@ -12,15 +12,25 @@ $(document).ready(function() {
           if (roughIt === "rough") {
             if (crowd === "loner") {
               if (region === "global") {
-                var destination = "Whistler, B.C."
-                            $("#destinationName").empty().append(destination);
-                            $("#results").show();
-                          } else {
-                            var destination = "Anchorage, AK"
-                            $("#destinationName").empty().append(destination);
-                            $("#results").show();
-                          }
-              } 
+                  var destination = "Cold, wild, rough, lonely, global place"
+                    $("#destinationName").empty().append(destination);
+                    $("#results").show();
+                } else {
+                  var destination = "Cold, wild, rough, lonely, local place"
+                    $("#destinationName").empty().append(destination);
+                    $("#results").show();
+                }
+              } else {
+                if (region === "global") {
+                    var destination = "Cold, wild, rough, social, global place"
+                      $("#destinationName").empty().append(destination);
+                      $("#results").show();
+                  } else {
+                    var destination = "Cold, wild, rough, social, local place"
+                      $("#destinationName").empty().append(destination);
+                      $("#results").show();
+                  }
+              }
             }
           }
         }
