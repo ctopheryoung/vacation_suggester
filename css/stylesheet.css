@@ -6,6 +6,28 @@
   display: none;
 }
 
+#introduction-slide {
+  padding-left: 175px;
+  color: #ffffff;
+  height: 900px;
+  background: url("../img/intro-bg.jpg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+}
+
+#introduction-slide h3 {
+  color: #F0EEDD;
+}
+
+#introduction-slide .btn {
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
 .container {
   text-align: center;
+}
+
+.btn {
+  margin-top: 12px;
 }
