@@ -1,11 +1,3 @@
-#quiz-slide {
-  display: none;
-}
-
-#result-slide {
-  display: none;
-}
-
 #introduction-slide {
   padding-left: 175px;
   color: #ffffff;
@@ -22,10 +14,6 @@
 #introduction-slide .btn {
   margin-top: 100px;
   margin-left: 250px;
-}
-
-.container {
-  text-align: center;
 }
 
 .btn {

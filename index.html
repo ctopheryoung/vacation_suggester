@@ -8,32 +8,58 @@
     <title>Vacation Destination Quiz</title>
   </head>
   <body>
-
-    <!-- intro BEGIN -->
-    <div class = "jumbotron"  id="introduction-slide">
+    <div class = "jumbotron" id="introduction-slide">
         <h1>Vacation Destination Quiz</h1>
         <h3>Having trouble deciding where to head on your next vacation? Don't fret! I'm here to help.</h3>
-        <button type="button" class="btn btn-danger btn-lg" id="begin">Let's get started</button>
     </div>
-    <!-- intro END -->
-
+    <div class="container">
+    <h3>Just fill out this form and let the website work it's magic.</h3>
 
     <!-- form BEGIN -->
-    <div class="container" id="quiz-slide">
-    <h3>Just fill out this form and let the website work it's magic.</h3>
-    <
-    button type="button" class="btn btn-success" id="answer-submit">Show me the money!</button>
-    </div>
-    <!-- form END -->
+      <form id="vacationPreferences">
+        <div class="form-group">
+          <label for="temperature">Enter your ideal daytime temperature in fahrenheit:</label>
+          <input id="temperature" type="text">
+        </div>
 
+        <div class="form-group">
+          <label for="wildMild">Do you like to party?</label>
+          <select id="wildMild">
+            <option value="wild">Let's f***ing rage!!!</option>
+            <option value="mild">Tea, books, and napping for me.</option>
+          </select>
+        </div>
 
-    <!-- result BEGIN -->
-    <div class="container" id="result-slide">
+        <div class="form-group">
+          <label for="roughIt">Are you cool with roughing it?</label>
+          <select id="roughIt">
+            <option value="rough">I'll sleep <em>anywhere</em>!</option>
+            <option value="posh">I'd prefer a California King, room service, and a driver.</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="crowd">Do you want to visit a city or get off the grid for a while?</label>
+          <select id="crowd">
+            <option value="loner">The less people the better!</option>
+            <option value="city">I want to be in a happening place with lots of people.</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="region">Would you prefer to keep it domestic or travel internationally?</label>
+          <select id="region">
+            <option value="global">I'm a globe trotter!</option>
+            <option value="domestic">Let's stay close to home.</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-success" id="answer-submit">Show me the money!</button>
+
+      </form>
+      <!-- form END -->
     <h2>Your quiz results are in!</h2>
-    <p>According to my super advanced algorithm, you would love a vacation in:</p>
-    <h3><span id="quizResult"></span></h3>
-    <button type="button" class="btn btn-success" id="restart">Try Again!</button>
+    <p>According to my super advanced algorithm, you would love a vacation in: <span id="destinationName"></span></p>
   </div>
-    <!-- form END -->
   </body>
 </html>
