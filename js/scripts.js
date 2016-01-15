@@ -9,5 +9,9 @@ $(document).ready(function() {
       $("div#result-slide").show();
     });
 
+    $("button#restart").click(function(){
+      $("div#result-slide").hide();
+      $("div#quiz-slide").show();
+    });
 
   });
