@@ -18,15 +18,15 @@
     <!-- form BEGIN -->
       <form id="vacationPreferences">
         <div class="form-group">
-          <label for="temperature">Enter your ideal daytime temperature in fahrenheit:</label>
-          <input id="temperature" type="text">
+          <label for="name">Please enter your name:</label>
+          <input id="name" type="text">
         </div>
 
         <div class="form-group">
           <label for="wildMild">Do you like to party?</label>
           <select id="wildMild">
-            <option value="wild">Let's f***ing rage!!!</option>
             <option value="mild">Tea, books, and napping for me.</option>
+            <option value="wild">Let's f***ing rage!!!</option>
           </select>
         </div>
 
@@ -58,8 +58,9 @@
 
       </form>
       <!-- form END -->
-    <h2>Your quiz results are in!</h2>
-    <p>According to my super advanced algorithm, you would love a vacation in: <span id="destinationName"></span></p>
+    <h2>Okay, <span id="userName"></span>!</h2>
+    <h3>Your quiz results are ready.</h3>
+    <p>I've check analyzed your input and according to my algorithm, you would love to take a trip to <span id="destinationName"></span>.</p>
   </div>
   </body>
 </html>
