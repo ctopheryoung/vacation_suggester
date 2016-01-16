@@ -19,7 +19,7 @@ $(document).ready(function() {
           if (roughIt === "rough") {
             if (crowd === "loner") {
               if (region === "global") {
-                var destination = "Russia and drink lots of Vodka, comrade" // wild, rough, lonely, global place
+                var destination = "Russia and drink lots of Vodka, comrad" // wild, rough, lonely, global place
                     $("#destinationName").empty().append(destination);
                     $("#results").show();
                 } else {
@@ -45,7 +45,7 @@ $(document).ready(function() {
                       $("#destinationName").empty().append(destination);
                       $("#results").show();
                   } else {
-                    var destination = "the California Coast and work at a cannibus growing facility" // wild, posh, lonely, local place
+                    var destination = "the California Coast and work at a cannibis growing facility" // wild, posh, lonely, local place
                       $("#destinationName").empty().append(destination);
                       $("#results").show();
                   }
