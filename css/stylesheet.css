@@ -1,5 +1,14 @@
+#quiz {
+  display: none;
+}
+
+#results {
+  display: none;
+}
+
 #introduction-slide {
   padding-left: 175px;
+  padding-right: 50px;
   color: #ffffff;
   height: 900px;
   background: url("../img/intro-bg.jpg");

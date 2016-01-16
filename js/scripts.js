@@ -1,6 +1,12 @@
 $(document).ready(function() {
+  $("button#begin").click(function() {
+    $("div#introduction-slide").hide();
+    $("div#quiz").show();
+  })
+
+
     $("form#vacationPreferences").submit(function(event) {
-      var name = ($("input#temperature").val());
+      var name = ($("input#name").val());
       var wildMild = $("select#wildMild").val();
       var roughIt = $("select#roughIt").val();
       var crowd = $("select#crowd").val();
@@ -101,6 +107,14 @@ $(document).ready(function() {
             }
           }
         }
+
+      if ( name ) {
+        $("#userName").empty().append(name);
+      }
+
+      else {
+        aler ("Please enter your name!")
+      }
 
       event.preventDefault();
     })

@@ -11,8 +11,9 @@
     <div class = "jumbotron" id="introduction-slide">
         <h1>Vacation Destination Quiz</h1>
         <h3>Having trouble deciding where to head on your next vacation? Don't fret! I'm here to help.</h3>
+        <button type="button" class="btn btn-danger btn-lg" id="begin">Click here to get started</button>
     </div>
-    <div class="container">
+      <div class="container" id="quiz">
     <h3>Just fill out this form and let the website work it's magic.</h3>
 
     <!-- form BEGIN -->
@@ -25,24 +26,24 @@
         <div class="form-group">
           <label for="wildMild">Do you like to party?</label>
           <select id="wildMild">
-            <option value="mild">Tea, books, and napping for me.</option>
-            <option value="wild">Let's f***ing rage!!!</option>
+            <option value="mild">No. Tea, books, and napping for me.</option>
+            <option value="wild">Yeah, let's f***ing rage!!!</option>
           </select>
         </div>
 
         <div class="form-group">
           <label for="roughIt">Are you cool with roughing it?</label>
           <select id="roughIt">
-            <option value="rough">I'll sleep <em>anywhere</em>!</option>
+            <option value="rough">Oh yeah, I'll sleep <em>anywhere</em>!</option>
             <option value="posh">I'd prefer a California King, room service, and a driver.</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="crowd">Do you want to visit a city or get off the grid for a while?</label>
+          <label for="crowd">Do you want to visit a busy place or get off the grid for a while?</label>
           <select id="crowd">
-            <option value="loner">The less people the better!</option>
             <option value="city">I want to be in a happening place with lots of people.</option>
+            <option value="loner">The less people the better!</option>
           </select>
         </div>
 
@@ -50,17 +51,17 @@
           <label for="region">Would you prefer to keep it domestic or travel internationally?</label>
           <select id="region">
             <option value="global">I'm a globe trotter!</option>
-            <option value="domestic">AMERICA IS THE GREATEST COUNTRY ON EARTH!</option>
+            <option value="domestic">AMERICA IS THE GREATEST COUNTRY ON EARTH! Why would I ever leave?!</option>
           </select>
         </div>
 
         <button type="submit" class="btn btn-success" id="answer-submit">Show me the money!</button>
-
       </form>
       <!-- form END -->
-    <h2>Okay, <span id="userName"></span>!</h2>
-    <h3>Your quiz results are ready.</h3>
-    <p>I've check analyzed your input and according to my algorithm, you would love to take a trip to <span id="destinationName"></span>.</p>
-  </div>
+    </div>
+    <div class="container" id="results">
+      <h2>Okay, <span id="userName"></span>!</h2>
+      <p>I've  analyzed your input and according to my algorithm, you would love to take a trip to <span id="destinationName"></span>.</p>
+    </div>
   </body>
 </html>
