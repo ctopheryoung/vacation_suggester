@@ -13,6 +13,8 @@ $(document).ready(function() {
       var region = $("select#region").val();
 
       //apply branching logic
+      if ( name ) {
+        $("#userName").empty().append(name);
         if (wildMild === "wild") {
           if (roughIt === "rough") {
             if (crowd === "loner") {
@@ -107,13 +109,10 @@ $(document).ready(function() {
             }
           }
         }
-
-      if ( name ) {
-        $("#userName").empty().append(name);
       }
 
       else {
-        aler ("Please enter your name!")
+        alert ("Please enter your name!")
       }
 
       event.preventDefault();
